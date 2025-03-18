@@ -1,6 +1,16 @@
 <template>
     <div class="page">
-        <header></header>
+        <header>
+            <div class="logo">
+                <img src="../assets/logo.png" width="76px">
+            </div>
+            <div class="title">
+                <h1>Ярославский промышленно- экономический колледж <br/>
+                    <h2>имени Н. П. Пастухова</h2>
+                </h1>
+            </div>
+            
+        </header>
 
         <main>
             <div class="menu"></div>
@@ -39,12 +49,51 @@
         width: 100%;
         height: 80px;
         margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
 
         box-sizing: border-box;
         border: 0.5px solid rgb(0, 139, 135);
         background: linear-gradient(90.00deg, rgb(0, 211, 213) 0.001%,
             rgb(31, 139, 132) 24.1%,rgb(43, 152, 138) 46.6%,
             rgb(54, 152, 131) 72.1%,rgb(25, 124, 102) 99.999%);
+    }
+
+    .logo {
+        position: relative;
+        margin-left: 16%;
+        top: 1px;
+    }
+
+    .title {
+        margin-left: 10px;
+        height: 90%;
+    }
+
+    h1 {
+        width: 280px;
+        height: 70%;
+        margin-top: 5px;
+        font-size: 18px;
+        margin-bottom: 1px;
+
+        /* Ярославский промышленно-экономический колледж имени Н. П. Пастухова */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        font-family: 'Montserrat', sans-serif;  
+        font-weight: 700;
+        color: rgb(255, 255, 255);  
+    }
+
+    h2 {
+        margin-top: 0px;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;  
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(255, 255, 255);  
     }
 
     main {
@@ -67,7 +116,7 @@
         position: relative;
         left: 16%;
         top: 0;
-        width: 70%;
+        width: 68%;
         min-width: 800px;
         height: 70%;
     }
@@ -143,7 +192,7 @@
     footer {
         position: relative;
         display: flex;
-        width: 70%;
+        width: 68%;
         height: 149px;
 
         left: 16%;
