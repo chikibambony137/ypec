@@ -1,9 +1,10 @@
 
 :root {
   background-size: cover;
-  background-color: #232323;
+  background-color: rgb(249, 249, 249);
   background-attachment: fixed;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden
 }
 
 #app {
