@@ -1,0 +1,43 @@
+networks:
+  dev:
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    ports:
+      - "80:80"
+    volumes:
+      - './nginx.conf:/etc/nginx/nginx.conf'
+    depends_on:
+      - backend
+      - frontend
+    networks:
+      - dev
+  backend:
+    build:
+      context: ./backend
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+    networks:
+      - dev
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./frontend
+    networks:
+      - dev
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "0053"
+      POSTGRES_DB: recipe-list
+    networks:
+      - dev
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
