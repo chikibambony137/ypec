@@ -94,11 +94,13 @@
         position: relative;
         margin-left: 16%;
         top: 5px;
+        cursor: pointer;
     }
 
     .title {
         margin-left: 10px;
         height: 90%;
+        cursor: pointer;
     }
 
     h1 {
@@ -144,6 +146,7 @@
 
         position: absolute;
         right: 0px;
+        align-items: center;
     }
 
     .refs-header2 label, .menu-bttn {
@@ -159,6 +162,12 @@
         line-height: 20px;
         letter-spacing: 0%;
         text-align: center;
+        cursor: pointer;
+        height: 20px;
+    }
+
+    .refs-header2 label:hover {
+        color: rgb(210, 210, 210);
     }
 
     .menu-bttn {
@@ -172,6 +181,10 @@
 
     .menu-bttn:hover {
         background: rgb(40, 142, 118);
+    }
+
+    .menu-bttn:hover .line {
+        background: rgb(210, 210, 210);
     }
 
     .burger {
