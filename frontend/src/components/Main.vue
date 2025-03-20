@@ -30,9 +30,89 @@
         </header>
 
         <main>
-            <div class="menu"></div>
-            <div class="swap"></div>
-            <div class="aside"></div>
+            <div class="menu">
+                <div class="menu-ref">
+                    <div class="icon">
+                        <img src="../assets/abiturientam.png" width="20px"/>
+                    </div>
+                    <h2>Абитуриентам</h2>
+                </div>
+                <div class="menu-ref">
+                    <div class="icon">
+                        <img src="../assets/teachers.png" width="20px"/>
+                    </div>
+                    <h2>Преподавателям</h2>
+                </div>
+                <div class="menu-ref">
+                    <div class="icon">
+                        <img src="../assets/students.png" width="20px"/>
+                    </div>
+                    <h2>Студентам</h2>
+                </div>
+                <div class="menu-ref">
+                    <div class="icon">
+                        <img src="../assets/news.png" width="20px"/>
+                    </div>
+                    <h2>Новости</h2>
+                </div>
+                <div class="menu-ref">
+                    <div class="icon">
+                        <img src="../assets/college.png" width="20px"/>
+                    </div>
+                    <h2>О колледже</h2>
+                </div>
+                <div class="menu-ref" style="padding-bottom: 4px;">
+                    <div class="icon">
+                        <img src="../assets/tech.png" width="20px"/>
+                    </div>
+                    <h2>Техническое отделение</h2>
+                </div>
+                <div class="menu-ref" style="padding-bottom: 10px;">
+                    <div class="icon">
+                        <img src="../assets/himtech.png" width="20px"/>
+                    </div>
+                    <h2>Химико-технологическое отделение</h2>
+                </div>
+                <div class="menu-ref" style="padding-bottom: 4px;">
+                    <div class="icon">
+                        <img src="../assets/finprav.png" width="20px"/>
+                    </div>
+                    <h2>Финансово-правовое отделение</h2>
+                </div>
+                <div class="menu-ref" style="padding-bottom: 4px;">
+                    <div class="icon">
+                        <img src="../assets/zaoch.png" width="20px"/>
+                    </div>
+                    <h2>Заочное отделение</h2>
+                </div>
+                <div class="menu-ref" style="padding-bottom: 4px;">
+                    <div class="icon">
+                        <img src="../assets/dopobr.png" width="20px"/>
+                    </div>
+                    <h2>Дополнительное образование</h2>
+                </div>
+                <div class="menu-ref">
+                    <div class="icon">
+                        <img src="../assets/professionalitet.png" width="20px"/>
+                    </div>
+                    <h2>Профессионалитет</h2>
+                </div>
+                <div class="menu-ref">
+                    <div class="icon">
+                        <img src="../assets/workshops.png" width="20px"/>
+                    </div>
+                    <h2>Мастерские</h2>
+                </div>
+            </div>
+
+            <div class="swap">
+                <img src="../assets/prof-label.png" width="90%">
+            </div>
+
+            <div class="aside">
+                <img src="../assets/r-farm.png" width="90%">
+            </div>
+
             <div class="ad"></div>
             <div class="body"></div>
         </main>
@@ -121,7 +201,7 @@
         
     }
 
-    h2 {
+    .title h2 {
         margin-top: 0px;
         font-size: 12px;
         font-family: 'Montserrat', sans-serif;  
@@ -246,6 +326,7 @@
         width: 100%;
         height: 530px;
         margin-right: 3%;
+        padding: 5px;
 
         box-sizing: border-box;
         border: 2px solid rgba(136, 136, 136, 0.17);
@@ -254,12 +335,46 @@
         background: rgb(255, 255, 255);
     }
 
+    .menu-ref {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 34px;
+        cursor: pointer;
+    }
+
+    .menu-ref:hover h2 {
+        color: rgb(36, 128, 106);
+    }
+
+    .icon {
+        margin-top: 4px;
+        margin-left: 5px;
+    }
+
+    .menu h2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-left: 4px;
+        line-height: 18px;
+    }
+
     .swap {
         position: relative;
         grid-area: swap;
         width: 100%;
         height: 180px;
         margin-right: 3%;
+        align-content: center;
+        text-align: center;
 
         box-sizing: border-box;
         border: 2px solid rgba(136, 136, 136, 0.17);
@@ -273,6 +388,8 @@
         grid-area: aside;
         width: 100%;
         height: 180px;
+        align-content: center;
+        text-align: center;
 
         box-sizing: border-box;
         border: 2px solid rgba(136, 136, 136, 0.17);
