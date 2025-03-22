@@ -1,11 +1,11 @@
 <template>
-    <div class="logo">
-        <img src="../assets/logo.png" width="70px">
-    </div>
-    <div class="title">
-        <h1>Ярославский промышленно- экономический колледж <br/></h1>
-        <h2>имени Н. П. Пастухова</h2>
-    </div>
+        <div class="logo" @click="moveToHome">
+            <img src="../assets/logo.png" width="70px">
+        </div>
+        <div class="title" @click="moveToHome">
+            <h1>Ярославский промышленно- экономический колледж <br/></h1>
+            <h2>имени Н. П. Пастухова</h2>
+        </div>
 
     <div class="refs-header">
         <div class="refs-header2">
@@ -26,6 +26,12 @@ import MenuBttn from './MenuBttn.vue';
 
 export default {
     components: { MenuBttn },
+
+    methods: {
+        moveToHome() {
+            this.$router.push('/')
+        }
+    }
 }
 </script>
 
