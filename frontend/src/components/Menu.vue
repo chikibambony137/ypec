@@ -55,14 +55,14 @@
         <h2>Финансово-правовое отделение</h2>
     </div>
 
-    <div class="menu-ref" style="padding-bottom: 4px;" @click="moveToZaoch">
+    <div class="menu-ref" @click="moveToZaoch">
         <div class="icon">
             <img src="../assets/zaoch.png" width="20px"/>
         </div>
         <h2>Заочное отделение</h2>
     </div>
 
-    <div class="menu-ref" style="padding-bottom: 4px;" @click="moveToDopObr">
+    <div class="menu-ref" @click="moveToDopObr">
         <div class="icon">
             <img src="../assets/dopobr.png" width="20px"/>
         </div>

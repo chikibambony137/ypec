@@ -16,7 +16,6 @@
             <div class="body">
                 
             </div>
-
         </main>
 
         <footer>
