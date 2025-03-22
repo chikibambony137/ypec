@@ -107,17 +107,8 @@
     .info {
         position: relative;
         grid-area: info;
-        width: 96.1%;
+        width: 96.4%;
         height: 530px;
-
-        display: grid;
-        grid-template-columns: 68% 28%;
-        grid-template-rows: 32% 62.3%;
-        grid-template-areas: 
-            "swap aside"
-            "ad ad";
-        column-gap: 30px;
-
     }
 
     .body {

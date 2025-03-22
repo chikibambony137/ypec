@@ -1,5 +1,5 @@
 <template>
-    <div class="menu-ref">
+    <div class="menu-ref" @click="moveToAbiturientam">
         <div class="icon">
             <img src="../assets/abiturientam.png" width="20px"/>
         </div>
@@ -75,7 +75,7 @@
         </div>
         <h2>Профессионалитет</h2>
     </div>
-    
+
     <div class="menu-ref">
         <div class="icon">
             <img src="../assets/workshops.png" width="20px"/>
@@ -86,11 +86,15 @@
 
 <script>
 export default {
-
+    methods: {
+        moveToAbiturientam() {
+            this.$router.push('/abiturientam')
+        }
+    }
 }
 </script>
 
-<style>
+<style scoped>
     .menu-ref {
         display: flex;
         flex-direction: row;

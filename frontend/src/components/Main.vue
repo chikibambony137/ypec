@@ -1,24 +1,26 @@
 <template>
-    <div class="swap">
-        <img src="../assets/prof-label.png" width="90%">
-    </div>
-
-    <div class="aside">
-        <img src="../assets/r-farm.png" width="90%">
-    </div>
-
-    <div class="ad">
-        <div class="ad-text">
-            12 апреля 2025 года состоится Единый день открытых дверей Федерального проекта
-            <a href="https://ypec.ru/professionalitet/" target="_blank">«Профессионалитет»</a><br/>
-            Приглашаем вас посетить мероприятие по адресу:
-            г. Ярославль, улица Гагарина, дом 8 <br/>
-            Начало мероприятия — 9.00 ч. <br/>
-            <a href="https://ypec.ru/2025/03/%D0%B5%D0%B4%D0%B8%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B5%D0%BD%D1%8C-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D1%85-%D0%B4%D0%B2%D0%B5%D1%80%D0%B5%D0%B9-2/#more-11492" target="_blank">
-                Программа проведения</a>
+    <div class="page">
+        <div class="swap">
+            <img src="../assets/prof-label.png" width="90%">
         </div>
 
-        <img src="../assets/ad1.png" width="50%" style="margin: 20px;">
+        <div class="aside">
+            <img src="../assets/r-farm.png" width="90%">
+        </div>
+
+        <div class="info">
+            <div class="ad-text">
+                12 апреля 2025 года состоится Единый день открытых дверей Федерального проекта
+                <a href="https://ypec.ru/professionalitet/" target="_blank">«Профессионалитет»</a><br/>
+                Приглашаем вас посетить мероприятие по адресу:
+                г. Ярославль, улица Гагарина, дом 8 <br/>
+                Начало мероприятия — 9.00 ч. <br/>
+                <a href="https://ypec.ru/2025/03/%D0%B5%D0%B4%D0%B8%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B5%D0%BD%D1%8C-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D1%85-%D0%B4%D0%B2%D0%B5%D1%80%D0%B5%D0%B9-2/#more-11492" target="_blank">
+                    Программа проведения</a>
+            </div>
+
+            <img src="../assets/ad1.png" width="50%" style="margin: 20px;">
+        </div>
     </div>
 </template>
 
@@ -29,19 +31,16 @@
 <style scoped>
     .page {
         height: 100%;
+        width: 100%;
 
         display: grid;
         grid-template-columns: 50% 20%;
-        grid-template-rows: 28% 60.7%;
+        grid-template-rows: 28% 66.3%;
         grid-template-areas: 
             "swap aside"
-            "ad ad";
+            "info info";
         column-gap: 30px;
-        row-gap: 30px;
-
         box-sizing: border-box;
-
-        /* background: blue; */
     }
     
     .swap {
@@ -74,9 +73,9 @@
         background: rgb(255, 255, 255);
     }
 
-    .ad {
+    .info {
         position: relative;
-        grid-area: ad;
+        grid-area: info;
         width: 100%;
         height: 100%;
         margin-top: 30px;

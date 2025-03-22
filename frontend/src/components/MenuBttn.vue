@@ -24,7 +24,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .menu-bttn {
         height: 40px;
         width: 40px;

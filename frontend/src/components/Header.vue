@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .logo {
         position: relative;
         margin-left: 16%;
