@@ -1,27 +1,25 @@
 <template>
+    <div class="swap">
+        <img src="../assets/prof-label.png" width="90%">
+    </div>
 
-        <div class="swap">
-            <img src="../assets/prof-label.png" width="90%">
+    <div class="aside">
+        <img src="../assets/r-farm.png" width="90%">
+    </div>
+
+    <div class="ad">
+        <div class="ad-text">
+            12 апреля 2025 года состоится Единый день открытых дверей Федерального проекта
+            <a href="https://ypec.ru/professionalitet/" target="_blank">«Профессионалитет»</a><br/>
+            Приглашаем вас посетить мероприятие по адресу:
+            г. Ярославль, улица Гагарина, дом 8 <br/>
+            Начало мероприятия — 9.00 ч. <br/>
+            <a href="https://ypec.ru/2025/03/%D0%B5%D0%B4%D0%B8%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B5%D0%BD%D1%8C-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D1%85-%D0%B4%D0%B2%D0%B5%D1%80%D0%B5%D0%B9-2/#more-11492" target="_blank">
+                Программа проведения</a>
         </div>
 
-        <div class="aside">
-            <img src="../assets/r-farm.png" width="90%">
-        </div>
-
-        <div class="ad">
-            <div class="ad-text">
-                12 апреля 2025 года состоится Единый день открытых дверей Федерального проекта
-                <a href="https://ypec.ru/professionalitet/" target="_blank">«Профессионалитет»</a><br/>
-                Приглашаем вас посетить мероприятие по адресу:
-                г. Ярославль, улица Гагарина, дом 8 <br/>
-                Начало мероприятия — 9.00 ч. <br/>
-                <a href="https://ypec.ru/2025/03/%D0%B5%D0%B4%D0%B8%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B5%D0%BD%D1%8C-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D1%85-%D0%B4%D0%B2%D0%B5%D1%80%D0%B5%D0%B9-2/#more-11492" target="_blank">
-                    Программа проведения</a>
-            </div>
-
-            <img src="../assets/ad1.png" width="50%" style="margin: 20px;">
-        </div>
-
+        <img src="../assets/ad1.png" width="50%" style="margin: 20px;">
+    </div>
 </template>
 
 <script>

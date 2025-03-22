@@ -5,6 +5,7 @@ export default createRouter({
     history: createWebHistory(),
     routes: [
         { path: '/', component: Main },
+        { path: '/abiturientam', component: Abiturientam },
 
     ]
 })

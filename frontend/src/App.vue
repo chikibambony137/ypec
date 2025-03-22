@@ -1,107 +1,12 @@
 <template>
     <div class="page">
         <header>
-            <div class="logo">
-                <img src="./assets/logo.png" width="70px">
-            </div>
-            <div class="title">
-                <h1>Ярославский промышленно- экономический колледж <br/></h1>
-                <h2>имени Н. П. Пастухова</h2>
-            </div>
-
-            <div class="refs-header">
-                <div class="refs-header2">
-                    <label>Кабинеты</label>
-                    <label>Преподавателю</label>
-                    <label>Расписание</label>
-                    <label>Замены</label>
-
-                    <div class="menu-bttn" @click="toggleMenu">
-                        <div class="burger">
-                            <span class="line" v-bind:class="{ open: isOpen }"></span>
-                            <span class="line" v-bind:class="{ open: isOpen }"></span>
-                            <span class="line" v-bind:class="{ open: isOpen }"></span>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div> 
+            <Header></Header>
         </header>
 
         <main>
             <div class="menu">
-                <div class="menu-ref">
-                    <div class="icon">
-                        <img src="./assets/abiturientam.png" width="20px"/>
-                    </div>
-                    <h2>Абитуриентам</h2>
-                </div>
-                <div class="menu-ref">
-                    <div class="icon">
-                        <img src="./assets/teachers.png" width="20px"/>
-                    </div>
-                    <h2>Преподавателям</h2>
-                </div>
-                <div class="menu-ref">
-                    <div class="icon">
-                        <img src="./assets/students.png" width="20px"/>
-                    </div>
-                    <h2>Студентам</h2>
-                </div>
-                <div class="menu-ref">
-                    <div class="icon">
-                        <img src="./assets/news.png" width="20px"/>
-                    </div>
-                    <h2>Новости</h2>
-                </div>
-                <div class="menu-ref">
-                    <div class="icon">
-                        <img src="./assets/college.png" width="20px"/>
-                    </div>
-                    <h2>О колледже</h2>
-                </div>
-                <div class="menu-ref" style="padding-bottom: 4px;">
-                    <div class="icon">
-                        <img src="./assets/tech.png" width="20px"/>
-                    </div>
-                    <h2>Техническое отделение</h2>
-                </div>
-                <div class="menu-ref" style="padding-bottom: 10px;">
-                    <div class="icon">
-                        <img src="./assets/himtech.png" width="20px"/>
-                    </div>
-                    <h2>Химико-технологическое отделение</h2>
-                </div>
-                <div class="menu-ref" style="padding-bottom: 4px;">
-                    <div class="icon">
-                        <img src="./assets/finprav.png" width="20px"/>
-                    </div>
-                    <h2>Финансово-правовое отделение</h2>
-                </div>
-                <div class="menu-ref" style="padding-bottom: 4px;">
-                    <div class="icon">
-                        <img src="./assets/zaoch.png" width="20px"/>
-                    </div>
-                    <h2>Заочное отделение</h2>
-                </div>
-                <div class="menu-ref" style="padding-bottom: 4px;">
-                    <div class="icon">
-                        <img src="./assets/dopobr.png" width="20px"/>
-                    </div>
-                    <h2>Дополнительное образование</h2>
-                </div>
-                <div class="menu-ref">
-                    <div class="icon">
-                        <img src="./assets/professionalitet.png" width="20px"/>
-                    </div>
-                    <h2>Профессионалитет</h2>
-                </div>
-                <div class="menu-ref">
-                    <div class="icon">
-                        <img src="./assets/workshops.png" width="20px"/>
-                    </div>
-                    <h2>Мастерские</h2>
-                </div>
+                <Menu></Menu>
             </div>
 
             <div class="info">
@@ -114,23 +19,19 @@
 
         </main>
 
-        <footer></footer>
+        <footer>
+            <Footer></Footer>
+        </footer>
     </div>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                isOpen: false,
-            }
-        },
+    import Menu from './components/Menu.vue'
+    import Header from './components/Header.vue'
+    import Footer from './components/Footer.vue';
 
-        methods: {
-            toggleMenu() {
-                this.isOpen = !this.isOpen;
-            }
-        }
+    export default {
+        components: { Menu, Header, Footer },
     }
 </script>
 
@@ -148,6 +49,7 @@
         height: 2104px;
         min-width: 1000px;
     }
+
     header {
         position: relative;
         left: 0;
@@ -163,131 +65,6 @@
         background: linear-gradient(90.00deg, rgb(0, 211, 213) 0.001%,
             rgb(31, 139, 132) 24.1%,rgb(43, 152, 138) 46.6%,
             rgb(54, 152, 131) 72.1%,rgb(25, 124, 102) 99.999%);
-    }
-
-    .logo {
-        position: relative;
-        margin-left: 16%;
-        top: 5px;
-        cursor: pointer;
-    }
-
-    .title {
-        margin-left: 10px;
-        height: 90%;
-        cursor: pointer;
-    }
-
-    h1 {
-        width: 280px;
-        height: 70%;
-        margin-top: 3px;
-        font-size: 17px;
-        margin-bottom: 1px;
-
-        /* Ярославский промышленно-экономический колледж имени Н. П. Пастухова */
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        position: relative;
-        font-family: 'Montserrat', sans-serif;  
-        font-weight: 700;
-        color: rgb(255, 255, 255);  
-        
-    }
-
-    .title h2 {
-        margin-top: 0px;
-        font-size: 12px;
-        font-family: 'Montserrat', sans-serif;  
-        font-style: normal;
-        font-weight: 300;
-        color: rgb(255, 255, 255);  
-    }
-
-    .refs-header {
-        position: relative;
-        width: 41.5%;
-        align-items: center;
-        margin-left: 40px;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .refs-header2 {
-        box-sizing: border-box;
-        display: flex;
-        flex-wrap: wrap;
-
-        position: absolute;
-        right: 0px;
-        align-items: center;
-    }
-
-    .refs-header2 label, .menu-bttn {
-        margin-left: 28px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        color: rgb(255, 255, 255);
-        font-family: 'Montserrat', sans-serif;  
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 20px;
-        letter-spacing: 0%;
-        text-align: center;
-        cursor: pointer;
-        height: 20px;
-    }
-
-    .refs-header2 label:hover {
-        color: rgb(210, 210, 210);
-    }
-
-    .menu-bttn {
-        height: 40px;
-        width: 40px;
-
-        border-radius: 5px;
-        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-        background: rgb(46, 161, 135);
-    }
-
-    .menu-bttn:hover {
-        background: rgb(40, 142, 118);
-    }
-
-    .menu-bttn:hover .line {
-        background: rgb(210, 210, 210);
-    }
-
-    .burger {
-        position: relative;
-        left: 4px;
-        height: 30px;
-        align-content: center;
-    }
-
-    .line {
-      display: block;
-      width: 21px;
-      height: 1.5px;
-      margin: 6px;
-      background-color: white;
-      transition: all 0.3s ease;
-   }
-
-    .line.open:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5.5px);
-    }
-
-    .line.open:nth-child(2) {
-        opacity: 0;
-    }
-
-    .line.open:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
     }
 
     main {
@@ -325,38 +102,6 @@
         border-radius: 20px;
         box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
         background: rgb(255, 255, 255);
-    }
-
-    .menu-ref {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 34px;
-        cursor: pointer;
-    }
-
-    .menu-ref:hover h2 {
-        color: rgb(44, 154, 128);
-    }
-
-    .icon {
-        margin-top: 4px;
-        margin-left: 5px;
-    }
-
-    .menu h2 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: rgb(0, 0, 0);
-        font-family: 'Montserrat', sans-serif;  
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0%;
-        text-align: left;
-        margin-left: 4px;
-        line-height: 18px;
     }
 
     .info {
