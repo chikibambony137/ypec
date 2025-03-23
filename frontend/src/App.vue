@@ -74,7 +74,7 @@
         margin-bottom: 30px;
 
         display: grid;
-        grid-template-columns: 22% 79%;
+        grid-template-columns: 22% 78%;
         grid-template-rows: 40% 57.69%;
         grid-template-areas: 
             "menu info"
@@ -113,7 +113,7 @@
     .body {
         position: relative;
         grid-area: body;
-        width: 96.5%;
+        width: 97.2%;
         height: 100%;
         margin-top: 30px;
 
@@ -127,7 +127,7 @@
     footer {
         position: relative;
         display: flex;
-        width: 68%;
+        width: 67.7%;
         height: 149px;
 
         left: 16%;

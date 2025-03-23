@@ -1,10 +1,18 @@
 <template>
     <div class="page">
         <div class="swap">
-            <img src="../assets/prof-label.png" width="90%">
+            <transition name="slide">
+                <img 
+                    id="img-swap" 
+                    :key="currentIndex" 
+                    :src="currentImage" 
+                    alt="pisya" 
+                    :width="currentSize"
+                >
+            </transition>
         </div>
 
-        <div class="aside">
+        <div class="aside"> 
             <img src="../assets/r-farm.png" width="90%">
         </div>
 
@@ -25,8 +33,41 @@
 </template>
 
 <script>
+    export default {
+        data() {
+            return {
+                images: [
+                    "src/assets/prof-label.png",
+                    "src/assets/ad1.png",
+                    "src/assets/r-farm.png",
+                ],
 
+                sizes: [
+                    "90%", "40%", "30%"
+                ],
+
+                currentIndex: 0
+            }
+        },
+
+        computed: {
+            currentImage() {
+                return this.images[this.currentIndex];
+            },
+
+            currentSize() {
+                return this.sizes[this.currentIndex];
+            }
+        },
+
+        mounted() {
+            setInterval(() => {
+                this.currentIndex = (this.currentIndex + 1) % this.images.length;
+            }, 2000);
+        }
+    }
 </script>
+
 
 <style scoped>
     .page {
@@ -56,6 +97,22 @@
         border-radius: 20px;
         box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
         background: rgb(255, 255, 255);
+
+        overflow: hidden;
+    }
+
+    .swap img {
+        height: auto;
+        top: 0;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide-enter-active, .slide-leave-active {
+        transition: transform 0.5s ease;
+    }
+    
+    .slide-enter, .slide-leave-to {
+        transform: translateX(-100%);
     }
 
     .aside {
