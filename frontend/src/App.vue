@@ -45,7 +45,7 @@
         flex-direction: column;
 
         width: 100%;
-        height: 2104px;
+        height: 1620px;
         min-width: 1000px;
     }
 
@@ -74,7 +74,7 @@
         margin-bottom: 30px;
 
         display: grid;
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 22% 79%;
         grid-template-rows: 40% 57.69%;
         grid-template-areas: 
             "menu info"
@@ -86,7 +86,7 @@
         top: 0;
         width: 67.7%;
         min-width: 800px;
-        height: 63%;
+        height: 1315px;
     }
 
     .menu {
@@ -113,7 +113,7 @@
     .body {
         position: relative;
         grid-area: body;
-        width: 97.2%;
+        width: 96.5%;
         height: 100%;
         margin-top: 30px;
 

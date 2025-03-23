@@ -34,7 +34,7 @@
         width: 100%;
 
         display: grid;
-        grid-template-columns: 50% 20%;
+        grid-template-columns: 52.5% 22%;
         grid-template-rows: 28% 66.3%;
         grid-template-areas: 
             "swap aside"

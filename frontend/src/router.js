@@ -12,11 +12,16 @@ import Zaoch from "./components/Menu-components/Zaoch.vue";
 import DopObr from "./components/Menu-components/DopObr.vue";
 import Proft from "./components/Menu-components/Proft.vue";
 import WorkShops from "./components/Menu-components/Workshops.vue";
+import Cabinets from "./components/Header-refs/Cabinets.vue";
+import Changes from "./components/Header-refs/Changes.vue";
+import ForTeacher from "./components/Header-refs/ForTeacher.vue";
+import Raspisanie from "./components/Header-refs/Raspisanie.vue";
 
 export default createRouter({
     history: createWebHistory(),
     routes: [
         { path: '/', component: Main },
+
         { path: '/abiturientam', component: Abiturientam },
         { path: '/teachers', component: Teachers },
         { path: '/students', component: Students },
@@ -29,5 +34,10 @@ export default createRouter({
         { path: '/dopobr', component: DopObr },
         { path: '/professionalitet', component: Proft },
         { path: '/workshops', component: WorkShops },
+
+        { path: '/cabinets', component: Cabinets },
+        { path: '/changes', component: Changes },
+        { path: '/forteacher', component: ForTeacher },
+        { path: '/raspisanie', component: Raspisanie },
     ]
 })

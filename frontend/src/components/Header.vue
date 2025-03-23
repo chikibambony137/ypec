@@ -1,18 +1,20 @@
 <template>
-        <div class="logo" @click="moveToHome">
+    <a href="/" class="refToHome">
+        <div class="logo">
             <img src="../assets/logo.png" width="70px">
         </div>
-        <div class="title" @click="moveToHome">
+        <div class="title">
             <h1>Ярославский промышленно- экономический колледж <br/></h1>
             <h2>имени Н. П. Пастухова</h2>
         </div>
+    </a>
 
     <div class="refs-header">
         <div class="refs-header2">
-            <label>Кабинеты</label>
-            <label>Преподавателю</label>
-            <label>Расписание</label>
-            <label>Замены</label>
+            <a href="/cabinets"><label>Кабинеты</label></a>
+            <a href="/forteacher"><label>Преподавателю</label></a>
+            <a href="/raspisanie"><label>Расписание</label></a>
+            <a href="/changes"><label>Замены</label></a>
 
             <div>
                 <MenuBttn></MenuBttn>
@@ -36,6 +38,15 @@ export default {
 </script>
 
 <style scoped>
+    .refToHome {
+        position: relative;
+        margin-left: 12.2%;
+        top: 2px;
+        cursor: pointer;
+        display: flex;
+        
+    }
+
     .logo {
         position: relative;
         margin-left: 16%;
@@ -80,7 +91,7 @@ export default {
         position: relative;
         width: 41.5%;
         align-items: center;
-        margin-left: 40px;
+        margin-left: 6.4%;
         display: flex;
         flex-direction: row;
     }
