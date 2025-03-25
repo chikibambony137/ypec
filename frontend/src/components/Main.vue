@@ -102,17 +102,19 @@
     }
 
     .swap img {
+        position: relative;
         height: auto;
         top: 0;
+        left: 0;
         transition: transform 0.5s ease-in-out;
     }
 
     .slide-enter-active, .slide-leave-active {
-        transition: transform 0.5s ease;
+        transition: transform 0.1s ease;
     }
     
     .slide-enter, .slide-leave-to {
-        transform: translateX(-100%);
+        transform: translateX(-300%);
     }
 
     .aside {
