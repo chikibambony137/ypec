@@ -12,10 +12,6 @@
             <div class="info">
                 <router-view></router-view>
             </div>
-
-            <div class="body">
-                
-            </div>
         </main>
 
         <footer>
@@ -108,20 +104,6 @@
         grid-area: info;
         width: 96.4%;
         height: 530px;
-    }
-
-    .body {
-        position: relative;
-        grid-area: body;
-        width: 97.2%;
-        height: 100%;
-        margin-top: 30px;
-
-        box-sizing: border-box;
-        border: 2px solid rgba(136, 136, 136, 0.17);
-        border-radius: 20px;
-        box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
-        background: rgb(255, 255, 255);
     }
 
     footer {

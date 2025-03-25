@@ -19,7 +19,7 @@
         <div class="info">
             <div class="ad-text">
                 12 апреля 2025 года состоится Единый день открытых дверей Федерального проекта
-                <a href="/professionalitet" target="_blank">«Профессионалитет»</a><br/>
+                <a href="/professionalitet">«Профессионалитет»</a><br/>
                 Приглашаем вас посетить мероприятие по адресу:
                 г. Ярославль, улица Гагарина, дом 8 <br/>
                 Начало мероприятия — 9.00 ч. <br/>
@@ -28,6 +28,10 @@
             </div>
 
             <img src="../assets/ad1.png" width="50%" style="margin: 20px;">
+        </div>
+
+        <div class="body">
+            main
         </div>
     </div>
 </template>
@@ -79,9 +83,25 @@
         grid-template-rows: 28% 66.3%;
         grid-template-areas: 
             "swap aside"
-            "info info";
+            "info info"
+            "body body";
         column-gap: 30px;
         box-sizing: border-box;
+    }
+
+    .body {
+        position: absolute;
+        grid-area: body;
+        left: -257px;
+        width: 133.1%;
+        height: 755px;
+        margin-top: 60px;
+
+        box-sizing: border-box;
+        border: 2px solid rgba(136, 136, 136, 0.17);
+        border-radius: 20px;
+        box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+        background: rgb(255, 255, 255);
     }
     
     .swap {
