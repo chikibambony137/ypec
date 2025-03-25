@@ -28,12 +28,6 @@ import MenuBttn from './MenuBttn.vue';
 
 export default {
     components: { MenuBttn },
-
-    methods: {
-        moveToHome() {
-            this.$router.push('/')
-        }
-    }
 }
 </script>
 
