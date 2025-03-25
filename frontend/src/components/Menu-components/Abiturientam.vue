@@ -30,8 +30,8 @@ export default {
     .body {
         position: absolute;
         grid-area: body;
-        left: -257px;
-        width: 133.1%;
+        left: -33%;
+        width: 132.8%;
         height: 755px;
         margin-top: 30px;
 
@@ -41,5 +41,4 @@ export default {
         box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
         background: rgb(255, 255, 255);
     }
-    
 </style>

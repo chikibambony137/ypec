@@ -30,8 +30,8 @@ export default {
     .body {
         position: absolute;
         grid-area: body;
-        left: -257px;
-        width: 133.1%;
+        left: -33%;
+        width: 132.8%;
         height: 755px;
         margin-top: 30px;
 

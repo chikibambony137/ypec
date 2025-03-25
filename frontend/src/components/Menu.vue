@@ -34,35 +34,35 @@
         <h2>О колледже</h2>
     </div>
 
-    <div class="menu-ref" style="padding-bottom: 4px;" @click="moveToTech">
+    <div class="menu-ref" style="padding-bottom: 6px;" @click="moveToTech">
         <div class="icon">
             <img src="../assets/tech.png" width="20px"/>
         </div>
         <h2>Техническое отделение</h2>
     </div>
 
-    <div class="menu-ref" style="padding-bottom: 10px;" @click="moveToHimTech">
+    <div class="menu-ref" style="padding-bottom: 14px;" @click="moveToHimTech">
         <div class="icon">
             <img src="../assets/himtech.png" width="20px"/>
         </div>
         <h2>Химико-технологическое отделение</h2>
     </div>
 
-    <div class="menu-ref" style="padding-bottom: 4px;" @click="moveToFinPrav">
+    <div class="menu-ref" style="padding-bottom: 6px;" @click="moveToFinPrav">
         <div class="icon">
             <img src="../assets/finprav.png" width="20px"/>
         </div>
         <h2>Финансово-правовое отделение</h2>
     </div>
 
-    <div class="menu-ref" @click="moveToZaoch">
+    <div class="menu-ref" style="padding-bottom: 6px;" @click="moveToZaoch">
         <div class="icon">
             <img src="../assets/zaoch.png" width="20px"/>
         </div>
         <h2>Заочное отделение</h2>
     </div>
 
-    <div class="menu-ref" @click="moveToDopObr">
+    <div class="menu-ref" style="padding-bottom: 8px;"  @click="moveToDopObr">
         <div class="icon">
             <img src="../assets/dopobr.png" width="20px"/>
         </div>

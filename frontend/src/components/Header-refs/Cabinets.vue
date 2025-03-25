@@ -2,6 +2,10 @@
     <div class="info">
         <h1>Кабинеты</h1>
     </div>
+
+    <div class="body">
+        cab
+    </div>
 </template>
 
 <script>
@@ -25,5 +29,20 @@ export default {
 
     h1 {
         color: black;
+    }
+
+    .body {
+        position: absolute;
+        grid-area: body;
+        left: -33%;
+        width: 132.8%;
+        height: 755px;
+        margin-top: 30px;
+
+        box-sizing: border-box;
+        border: 2px solid rgba(136, 136, 136, 0.17);
+        border-radius: 20px;
+        box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+        background: rgb(255, 255, 255);
     }
 </style>

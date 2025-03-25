@@ -110,6 +110,7 @@
         position: relative;
         display: flex;
         width: 67.7%;
+        min-width: 804px;
         height: 149px;
 
         left: 16%;
