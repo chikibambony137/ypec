@@ -7,9 +7,17 @@
                     :key="currentIndex" 
                     :src="currentImage" 
                     alt="image" 
-                    :width="currentSize"
+                    :width="currentWidth"
                 >
             </transition>
+        </div>
+
+        <div class="swap-ellipses">
+            <div class="ellipse" 
+                 v-for="(color, index) in ellipseColors" 
+                 :key="index" 
+                 :style="{ backgroundColor: currentIndex === index ? color : '' }">
+            </div>
         </div>
 
         <div class="aside"> 
@@ -44,10 +52,20 @@
                     "src/assets/prof-label.png",
                     "src/assets/ad1.png",
                     "src/assets/r-farm.png",
+                    "src/assets/boom.jpg",
                 ],
 
-                sizes: [
-                    "90%", "40%", "30%"
+                widths: [
+                    "90%", "", "", "100%",
+                ],
+
+                ellipseColors: [
+                    "rgb(134, 132, 132)",
+                    "rgb(134, 132, 132)",
+                    "rgb(134, 132, 132)",
+                    "rgb(134, 132, 132)",
+                    "rgb(134, 132, 132)",
+                    "rgb(134, 132, 132)",
                 ],
 
                 currentIndex: 0
@@ -59,8 +77,8 @@
                 return this.images[this.currentIndex];
             },
 
-            currentSize() {
-                return this.sizes[this.currentIndex];
+            currentWidth() {
+                return this.widths[this.currentIndex];
             }
         },
 
@@ -135,6 +153,27 @@
     
     .slide-enter, .slide-leave-to {
         transform: translateX(-100%);
+    }
+
+    .swap-ellipses {
+        position: absolute;
+        top: 29%;
+        left: 22%;
+        width: 9%;
+        height: 4%;
+        display: flex;
+
+        align-items: center;
+        gap: 7px;
+    }
+
+    .ellipse {
+        background: #C2C2C2;
+        width: 8.2px;
+        height: 8.2px;
+        position: relative;
+        display: flex;
+        border-radius: 20px;
     }
 
     .aside {
