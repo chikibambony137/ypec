@@ -6,7 +6,7 @@
                     id="img-swap" 
                     :key="currentIndex" 
                     :src="currentImage" 
-                    alt="pisya" 
+                    alt="image" 
                     :width="currentSize"
                 >
             </transition>
@@ -67,7 +67,7 @@
         mounted() {
             setInterval(() => {
                 this.currentIndex = (this.currentIndex + 1) % this.images.length;
-            }, 2000);
+            }, 5000);
         }
     }
 </script>
@@ -123,18 +123,18 @@
 
     .swap img {
         position: relative;
-        height: auto;
+        height: 100%;
         top: 0;
         left: 0;
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.7s ease-in-out;
     }
 
     .slide-enter-active, .slide-leave-active {
-        transition: transform 0.1s ease;
+        transition: transform 0.5s ease-in-out;
     }
     
     .slide-enter, .slide-leave-to {
-        transform: translateX(-300%);
+        transform: translateX(-100%);
     }
 
     .aside {
