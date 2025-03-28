@@ -28,6 +28,11 @@ export default {
     .menu-bttn {
         height: 40px;
         width: 40px;
+        margin-left: 50%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
         border-radius: 5px;
         box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);

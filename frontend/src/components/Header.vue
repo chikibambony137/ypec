@@ -15,10 +15,6 @@
             <a href="/forteacher"><label>Преподавателю</label></a>
             <a href="/raspisanie"><label>Расписание</label></a>
             <a href="/changes"><label>Замены</label></a>
-
-            <div>
-                <MenuBttn></MenuBttn>
-            </div>
         </div>
     </div>
 </template>
@@ -84,6 +80,7 @@ export default {
     .refs-header {
         position: relative;
         width: 41.5%;
+        min-width: 450px;
         align-items: center;
         margin-left: 6.4%;
         display: flex;

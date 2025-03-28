@@ -2,6 +2,9 @@
     <div class="page">
         <header>
             <Header></Header>
+            <div class="menu-bttn">
+                <MenuBttn></MenuBttn>
+            </div>
         </header>
 
         <main>
@@ -12,6 +15,10 @@
             <div class="info">
                 <router-view></router-view>
             </div>
+
+            <!-- <div class="menu-div">
+
+            </div> -->
         </main>
 
         <footer>
@@ -24,9 +31,10 @@
     import Menu from './components/Menu.vue'
     import Header from './components/Header.vue'
     import Footer from './components/Footer.vue';
+    import MenuBttn from './components/MenuBttn.vue';
 
     export default {
-        components: { Menu, Header, Footer },
+        components: { Menu, Header, Footer, MenuBttn },
     }
 </script>
 
@@ -54,12 +62,29 @@
         margin-bottom: 30px;
         display: flex;
         flex-direction: row;
+        align-items: center;
 
         box-sizing: border-box;
         border: 0.5px solid rgb(0, 139, 135);
         background: linear-gradient(90.00deg, rgb(0, 211, 213) 0.001%,
             rgb(31, 139, 132) 24.1%,rgb(43, 152, 138) 46.6%,
             rgb(54, 152, 131) 72.1%,rgb(25, 124, 102) 99.999%);
+    }
+
+    .menu-bttn {
+        margin-right: 17.5%;
+    }
+
+    .menu-div {
+        background: linear-gradient(90.00deg, rgb(0, 211, 213) 0.001%,
+            rgb(31, 139, 132) 24.1%,rgb(43, 152, 138) 46.6%,
+            rgb(54, 152, 131) 72.1%,rgb(25, 124, 102) 99.999%);
+        position: absolute;
+        top: 0px;
+        left: 50px;
+        width: 94%;
+        min-width: 700px;
+        height: 40.4%;
     }
 
     main {

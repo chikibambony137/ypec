@@ -108,7 +108,7 @@
     }
 
     .body {
-        position: absolute;
+        position: relative;
         grid-area: body;
         left: -33%;
         width: 132.8%;
